@@ -1,0 +1,257 @@
+.container{
+    background-image: url('photos/image3.jpg');
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    /*opacity: 50%;*/
+    
+   
+
+}
+
+.header{
+    
+    
+    text-align: center;
+    color: rgb(3, 50, 69);
+    font-family: fantasy;
+    font-size: 35px;
+    padding: 1%;
+    top: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    background-color: rgba(8, 130, 136, 0.238);
+    
+   
+}
+.display{
+    
+    
+    text-align: center;
+   
+    font-family: fantasy;
+    font-size: 48px;
+    padding: 1%;
+    top: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    align-items: center;
+    
+    
+   
+}
+.transbox{
+
+    background-color: rgba(3, 113, 125, 0.1);
+    height: 92%;
+    width: 100%;
+    margin-top: 5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    right: 0;
+    position: fixed;
+    
+    
+}   
+
+.form{
+    height: 70%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    /*text-align: center;*/
+    padding: 1px;
+    border-radius: 25px;
+    background-color: rgba(4, 86, 86, 0.321);
+    position: fixed;
+}
+.cloud{
+    font-size: 100px;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: fixed;
+    
+}
+
+input[type=text1]{
+    width: 20%;
+    height: 3%;
+    padding: 1%;
+    margin: 15% 0% 0% 5%;
+    display: inline-block;
+    border: 2px solid rgba(6, 212, 244, 0.634) ;
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgba(182, 208, 211, 0.1);
+    
+   
+} 
+
+input[type=text2]{
+    width: 20%;
+    height: 3%;
+    padding: 1%;
+    margin: 17% 0% 0% 5%;
+    display: inline-block;
+    border: 2px solid rgba(6, 212, 244, 0.634) ;
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgba(243, 247, 248, 0.1);
+    
+    
+
+    
+   
+} 
+input:focus {
+    background-color: #f0f0f0b4; /* Change the background color when clicked */
+}
+
+
+input[type=submit]{
+    height: 5%;
+    margin: 21% 0% 0% 11%;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: rgba(0, 7, 8, 0.1);
+    position: fixed;
+    font-family: fantasy;
+    padding: 1x;
+    border: 2px solid rgba(6, 212, 244, 0.634) ;
+
+    
+
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.196); /* Placeholder text color */
+}
+input[type=submit]:hover{
+    background-color: rgba(11, 138, 152, 0.39);
+
+}
+
+.text{
+    color: rgba(250, 253, 253, 0.795);
+    margin: 13% 0% 0% 5%;
+    position: fixed;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    font-family: fantasy;
+    
+    
+}
+
+.container2{
+    background-image: url('photos/image3.jpg');
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    /*opacity: 50%;*/
+    
+   
+
+}
+.main{
+    background-color: rgba(4, 86, 86, 0.473);
+    height: 50%;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 18%;
+    position: fixed;
+    border-radius: 20px;
+    
+}
+.main-temp{
+    font-size: 100px;
+    margin-left: 6%;
+    margin-top: 8%;
+    position: fixed;
+   
+}
+.main2{
+    background-color: rgba(4, 86, 86, 0.251);
+    height: 50%;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 33.5%;
+    left: 0;
+    position: fixed;
+    border-radius: 20px;
+    
+}
+.main-sun{
+    font-size: 100px;
+    margin-left: 3.5%;
+    margin-top: 8%;
+    position: fixed;
+   
+}
+.main3{
+    background-color: rgba(4, 86, 86, 0.473);
+    height: 50%;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 49%;
+    left: 0;
+    position: fixed;
+    border-radius: 20px;
+    
+}
+.main-humidity{
+    font-size: 100px;
+    margin-left: 5%;
+    margin-top: 8%;
+    position: fixed;
+   
+}
+.main4{
+    background-color: rgba(4, 86, 86, 0.251);
+    height: 50%;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 64.5%;
+    left: 0;
+    position: fixed;
+    border-radius: 20px;
+    
+}
+.main-rain{
+    font-size: 100px;
+    margin-left: 4.5%;
+    margin-top: 8%;
+    position: fixed;
+   
+}
+.data_temp{
+    font-size: 25px;
+    position: fixed;
+    color: aliceblue;
+    margin-top: 4%;
+}
+.data_rain{
+    font-size: 25px;
+    position: fixed;
+    color: aliceblue;
+    margin-top: 4%;
+}
+.data_humidity{
+    font-size: 25px;
+    position: fixed;
+    color: aliceblue;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.data_sun{
+    font-size: 25px;
+    position: fixed;
+    color: aliceblue;
+    margin-top: 4%;
+    margin-left: 2%;
+}
