@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>My App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <div class="container">
+        <div class="header">WHEATHER APP</div>
+        
+    </div>
+    <div class="transbox">
+        <div class="form">
+            <div class="cloud">
+                <i class="fa fa-cloud-sun-rain" aria-hidden="true" style="color: rgba(29, 169, 167, 0.558);"></i>
+            
+            </div>
+            <div class="text">Enter your location</div>
+            <form action="/getweather/" method="post">
+                <input type="text1" name="city"  placeholder="Write your location" required><br>
+                
+
+                <input type="submit" value="Get weather">
+            </form>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
