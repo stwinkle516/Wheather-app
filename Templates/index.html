@@ -1,32 +1,48 @@
 <html>
-    <head>
-        <title>My App</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    </head>
+
+<head>
+    <title>My App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
 <body>
     <div class="container">
-        <div class="header">WHEATHER APP</div>
-        
-    </div>
-    <div class="transbox">
-        <div class="form">
-            <div class="cloud">
-                <i class="fa fa-cloud-sun-rain" aria-hidden="true" style="color: rgba(29, 169, 167, 0.558);"></i>
-            
-            </div>
-            <div class="text">Enter your location</div>
-            <form action="/getweather/" method="post">
-                <input type="text1" name="city"  placeholder="Write your location" required><br>
-                
 
-                <input type="submit" value="Get weather">
-            </form>
-        </div>
+
+        <div
+            style=" color:antiquewhite; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:35px;margin: 4% 0% 0% 6%; font-weight: bold;">
+            WEATHER APP</div>
+
+        <div style="margin: -2.5% 0% 0% 60%; font-family: Verdana, Geneva, Tahoma, sans-serif; color:antiquewhite; font-size: larger;font-weight: bolder;""> HOME </div>
+            <div style=" margin: -1.63% 0% 0% 66%; color: antiquewhite; font-size: larger;font-family: Verdana, Geneva,
+            Tahoma, sans-serif;font-weight: bolder;""> CLIMATE</div>
+
+        <div style="margin: -1.63% 0% 0% 74.5%; color:antiquewhite; font-size: larger;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;""> NEWS </div>
+            <div style=" margin: -1.63% 0% 0% 81%; color:antiquewhite; font-size: larger;font-family: Verdana, Geneva,
+            Tahoma, sans-serif;font-weight: bolder;""> MAP </div>
+
+        <div style="margin: -1.63% 0% 0% 86%; color:antiquewhite; font-size: larger;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;""> CONTACT </div>
+        
+
+            <div style=" color: rgba(236, 240, 241, 0.505); font-size: 30px; font-family: Verdana, Geneva, Tahoma,
+            sans-serif; font-weight: bolder; margin: 17% 0% 0% 27%;">The Only Weather Forecast You Need</div>
+            <div style="height: 1%; width: 11%; align-items: center; background-color: aliceblue; margin:2% 0% 0% 41%; border-radius: 5px;"> </div>
+
+    </div>
     </div>
     
+    <form action="/getweather/" method="post">
+        <input type="text1" name="city" placeholder="Write your location" required style="margin:30% 0% 0% 31.5%; height: 6%; width: 33%;"><br>
+
+
+        <input type="submit" value="Get weather" style="margin: 34% 0% 0% 41.5% ; width: 10%; color: rgb(247, 238, 238); font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    </form>
+    </div>
     
-    
+
+
 </body>
+
 </html>

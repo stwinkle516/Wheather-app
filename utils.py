@@ -10,7 +10,6 @@ def get_weather_data(city):
     final_data["wind"]=json_data["wind"]["speed"]
     final_data["Haze"]=json_data["weather"][0]["main"]
     final_data["city"]=json_data["name"]
-    final_data["country"]=json_data["sys"]["country"]
-
+    
     print("final_data---->",final_data)
     return final_data
