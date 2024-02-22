@@ -11,54 +11,53 @@
 <body>
 
     <div class="container2">
-       
         
+        <div class="header"> <a href="/" style="text-decoration: none; color: rgba;"></a></div>
         
-        <div style="margin: 48% 0% 0% 42%;position: fixed; font-size: 50px; font-weight: bold; color: rgba(29, 169, 167, 0.558);">
+        <!-- city -->
+        <div style="margin: 49% 0% 0% 46%;position: fixed; font-size: 40px; font-weight:lighter; color: antiquewhite;">
             {{data ["city"]}} </div>
+       <div class="transbox2">
+       <div class="display">
+            <!--for haze images  -->
+        <img src="{{url_for('static',filename='photos/{}.png'.format(data['Haze']))}}" alt="" style=" width: 200px; height: 200px;"><br>
+        <div style="margin: -2% 0% 0% 15%;">{{data["Haze"]}}</div></div>
+        <!-- for temperature -->
+         <div style="color: antiquewhite;margin: 3% 0% 0% 26%; font-size: 45px; position: fixed;">{{data["temp"]}} °C</div>  
+         
+         <!-- for humidity -->
+         <i class="fa-solid fa-droplet" aria-hidden="true" style="color: rgba(237, 241, 241, 0.751); margin: 13% 0% 0% 9%; font-size: 39px; position: fixed;"></i>
+
+         <div class="main-humidity">
+            
+            <div>{{data["humidity"]}} % </div>
+        </div>
+        <!-- for wind -->
+        <i class="fa-solid fa-wind" aria-hidden="true" style="color: rgba(237, 241, 241, 0.751);font-size: 39px;margin: 13% 0% 0% 28%; position: fixed;"></i>
+        <div class="main-rain">
+            
+            <div>{{data["wind"]}} mm</div> 
+            </div>
+
+          <!-- for pressure -->
+         <i class="fa-solid fa-temperature-arrow-down" aria-hidden="true" style="color: rgba(237, 241, 241, 0.751); margin: 13% 0% 0% 48%; font-size: 39px; position: fixed;"></i>
+        
+         <div class="main-sun">
+            
+            <div class="data_sun" style="color: antiquewhite; margin: 17% 0% 0% 46%; position: fixed;font-size: 30px;">{{data["pressure"]}} pa </div>
+        </div> 
+         
+
+
+
+        </div> 
+        
             
 
 
-        <div class="header"></div>
-        <div class="display">
-            <!-- <div class="{{data['Haze']}}" style="color: white; position: fixed; margin-left: 12%; color: rgba(29, 169, 167, 0.558);"> -->
-                
-            <!-- </div> -->
-            <img src="{{url_for('static',filename='photos/{}.png'.format(data['Haze']))}}" alt="" style=" width: 30px; height: 30px;">
-            {{data["Haze"]}}
-                
+    </div>
+       
 
-
-        </div>
-        <div class="main">
-            
-
-            <div class="main-temp">
-                <i class="fa-solid fa-temperature-quarter" aria-hidden="true"
-                    style="color: rgba(29, 169, 167, 0.558);"></i>
-                <div class="data_temp">{{data["temp"]}} °C</div>
-            </div>
-        </div>
-        <div class="main2">
-            <div class="main-sun">
-                <i class="fa-solid fa-cloud-sun" aria-hidden="true" style="color: rgba(29, 169, 167, 0.558);"></i>
-                <div class="data_sun">{{data["pressure"]}} </div>
-            </div>
-        </div>
-        <div class="main3">
-            <div class="main-humidity">
-                <i class="fa-solid fa-droplet" aria-hidden="true" style="color: rgba(29, 169, 167, 0.558);"></i>
-                <div class="data_humidity">{{data["humidity"]}} </div>
-            </div>
-        </div>
-        <div class="main4">
-            <div class="main-rain">
-                <i class="fa-solid fa-cloud-rain" aria-hidden="true" style="color: rgba(29, 169, 167, 0.558);"></i>
-                <div class="data_rain" >{{data["wind"]}} mm</div> 
-                
-
-                </div>
-            </div>
 
             
         </div>
